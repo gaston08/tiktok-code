@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Developer - Retro Portfolio</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/nes.css/2.3.0/css/nes.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Press Start 2P", cursive;
+        padding: 2rem;
+        background-color: #f8f8f8;
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .section {
+        margin-bottom: 4rem;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 4rem 0;
+      }
+
+      .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin: 2rem 0;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        margin: 2rem 0;
+      }
+
+      .progress-container {
+        margin: 1rem 0;
+      }
+
+      .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+      }
+
+      .social-links {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        margin: 2rem 0;
+      }
+
+      .avatar {
+        height: 200px;
+        width: auto;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="hero section">
+        <img
+          src="/profile3.png"
+          alt="John Developer"
+          class="nes-avatar avatar"
+        />
+        <h1 class="nes-text is-primary">John Developer</h1>
+        <p class="nes-text">Full-Stack Developer | Retro Gaming Enthusiast</p>
+        <div class="social-links">
+          <a href="#" class="nes-btn">View Projects</a>
+          <a href="#" class="nes-btn is-primary">Contact Me</a>
+        </div>
+        <section class="icon-list">
+          <i class="nes-logo"></i>
+          <i class="nes-jp-logo"></i>
+          <i class="nes-octocat animate"></i>
+          <i class="snes-logo"></i>
+          <i class="snes-jp-logo"></i>
+        </section>
+      </section>
+
+
+      <section class="section">
+        <div class="nes-container with-title">
+          <h2 class="title">About Me</h2>
+          <p>
+            I'm a passionate full-stack developer with 5+ years of experience
+            crafting web applications. When I'm not coding, you can find me
+            collecting retro games or contributing to open-source projects.
+          </p>
+          <div class="nes-container is-rounded">
+            <p>
+              <i class="nes-icon is-small star"></i>
+              Learning: WebAssembly and Rust
+            </p>
+            <p>
+              <i class="nes-icon is-small trophy"></i>
+              Currently working on: React-based game inventory system
+            </p>
+            <p>
+              <i class="nes-icon is-small heart"></i>
+              Open to: Freelance projects and collaborations
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="nes-container with-title">
+          <h2 class="title">Skills</h2>
+          <div class="skills-grid">
+            <div class="progress-container">
+              <p>JavaScript</p>
+              <progress
+                class="nes-progress is-success"
+                value="90"
+                max="100"
+              ></progress>
+            </div>
+            <div class="progress-container">
+              <p>React</p>
+              <progress
+                class="nes-progress is-primary"
+                value="85"
+                max="100"
+              ></progress>
+            </div>
+            <div class="progress-container">
+              <p>Node.js</p>
+              <progress
+                class="nes-progress is-warning"
+                value="80"
+                max="100"
+              ></progress>
+            </div>
+            <div class="progress-container">
+              <p>Python</p>
+              <progress
+                class="nes-progress is-error"
+                value="75"
+                max="100"
+              ></progress>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="nes-container with-title">
+          <h2 class="title">Featured Projects</h2>
+          <div class="project-grid">
+            <div class="nes-container is-rounded">
+              <h3>Retro Game Tracker</h3>
+              <p>
+                A React-based application for tracking retro game collections
+              </p>
+              <ul class="nes-list is-disc">
+                <li>React + Redux</li>
+                <li>Node.js backend</li>
+                <li>MongoDB database</li>
+              </ul>
+              <a href="#" class="nes-btn is-success">Live Demo</a>
+              <a href="#" class="nes-btn is-warning">GitHub</a>
+            </div>
+            <div class="nes-container is-rounded">
+              <h3>Weather Pixel</h3>
+              <p>8-bit styled weather application with real-time updates</p>
+              <ul class="nes-list is-disc">
+                <li>Vue.js frontend</li>
+                <li>Weather API integration</li>
+                <li>Pixel art animations</li>
+              </ul>
+              <a href="#" class="nes-btn is-success">Live Demo</a>
+              <a href="#" class="nes-btn is-warning">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="nes-container with-title">
+          <h2 class="title">Experience</h2>
+          <div class="nes-container is-rounded">
+            <h3>Senior Developer @ Tech Corp</h3>
+            <p>2020 - Present</p>
+            <ul class="nes-list is-circle">
+              <li>Led development of company's main product</li>
+              <li>Managed team of 5 developers</li>
+              <li>Implemented CI/CD pipeline</li>
+            </ul>
+          </div>
+          <div class="nes-container is-rounded" style="margin-top: 1rem">
+            <h3>Full-Stack Developer @ StartUp Inc</h3>
+            <p>2018 - 2020</p>
+            <ul class="nes-list is-circle">
+              <li>Developed responsive web applications</li>
+              <li>Optimized database performance</li>
+              <li>Reduced loading times by 60%</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="nes-container with-title">
+          <h2 class="title">Contact</h2>
+          <div class="contact-grid">
+            <div>
+              <label for="name">Your Name</label>
+              <input type="text" id="name" class="nes-input" />
+            </div>
+            <div>
+              <label for="email">Your Email</label>
+              <input type="email" id="email" class="nes-input" />
+            </div>
+            <div style="grid-column: 1 / -1">
+              <label for="message">Message</label>
+              <textarea id="message" class="nes-textarea"></textarea>
+            </div>
+            <button type="submit" class="nes-btn is-primary">
+              Send Message
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <footer class="section">
+        <div class="nes-container">
+          <div class="social-links">
+            <a href="#" class="nes-btn"><i class="nes-icon github"></i></a>
+            <a href="#" class="nes-btn"><i class="nes-icon linkedin"></i></a>
+            <a href="#" class="nes-btn"><i class="nes-icon twitter"></i></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
